@@ -31,7 +31,7 @@ By default SSH is deactivated and the root password unknown (or determined from 
 BUT fear not! We're going to access the router through a known vulnerability (CVE-2019-18370) and change it
 to `xiaomi4Life` as well as start/activate dropbear (SSH).
 
-Make sure you are connect to your router is running and connected via ethernet.
+Make sure your router is running and connected via ethernet.
 
 ```sh
 # Did you read the prerequisites? Sigh... uncomment the lines below
@@ -50,7 +50,7 @@ And voila... the setup will work too and add your key to `authorized_keys` of dr
 ## New firmware
 
 Download the newest version from: https://openwrt.org/toh/xiaomi/mir3g
-For me this is a `openwrt-*.kernel1.bin` and `openwrt-*.rootfs0.bin` (\* omitted for brevity).
+For me this is a `openwrt-*.kernel1.bin` and `openwrt-*.rootfs0.bin` (\* omitted for brevity). Or build your own version if you're brave.
 
 ```sh
 # Copy both binaries to the tmp folder
