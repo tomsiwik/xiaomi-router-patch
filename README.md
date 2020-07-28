@@ -34,15 +34,17 @@ to `xiaomi4Life` as well as start/activate dropbear (SSH).
 Make sure your router is running and connected via ethernet.
 
 ```sh
-# Did you read the prerequisites? Sigh... uncomment the lines below
+# Did you read the prerequisites? If not, uncomment the lines below 
+# and make sure you have python v3 installed
 # pip install requests
 # pip install tarfile
 
 # Make sure your router is connected (eth) & ready
+# This will activate ssh and set the root password to 'xiaomi4Life'
 python3 install.py
 ```
 
-## Enabling SSH & Key-Based Authentication
+## Enabling SSH & Key-Based Authentication (optional)
 
 In `bootstrap/setup.sh` you can uncomment the key-file setup and add a `id_rsa.pub` file into the `bootstrap/` folder.
 And voila... the setup will work too and add your key to `authorized_keys` of dropbear.
