@@ -38,7 +38,7 @@ Make sure your router is running and connected via ethernet.
 # pip install requests
 # pip install tarfile
 
-# Make sure you have an id_rsa.pub in bootstrap/ !!!!!
+# Make sure your router is connected (eth) & ready
 python3 install.py
 ```
 
