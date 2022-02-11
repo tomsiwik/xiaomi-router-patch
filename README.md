@@ -21,8 +21,8 @@ the (paranoid) process and do it the friendly way so you guys can install your r
 - [x] Python / Python3
 - [x] Pip with packages: requests, tarfile
 - [x] Installed Xiaomi firmwares that have this vuln:
-  - [Dev firmware 2.25.122](https://dereferer.me/?http%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_c2175_2.25.122.bin)
-  - [Dev firmware 2.25.124](https://dereferer.me/?http%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin)[[Mirror]](https://app.box.com/s/btnnyg9iifo0o4i4rc36bidi3d85bez5)
+  - [Dev firmware 2.25.122](https://dereferer.me/?https%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_c2175_2.25.122.bin)
+  - [Dev firmware 2.25.124](https://dereferer.me/?https%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin)[[Mirror]](https://app.box.com/s/btnnyg9iifo0o4i4rc36bidi3d85bez5)
 - [ ] (optional) `ssh-keygen` if you choose key-based auth
 
 ## Getting Started
