@@ -6,7 +6,7 @@ _Tested on:_
 - I'm sure this workaround can work on newer/others too
 
 I screwed up. I bought too many Xiaomi Routers: nano, mini and some other monster I don't remember.
-While all of them were a pleasure to setup with OpenWrt, Xiami decided to make it a hassle to do so
+While all of them were a pleasure to setup with OpenWrt, Xiaomi decided to make it a hassle to do so
 with their newer devices. And here is where my problems began: the bully Xiaomi Router 3 (R3G) was on
 lock-down. You need to register this device on miwifi.com and override your router with a custom
 `miwifi_ssh.bin` that only allows YOU with the listed password on miwifi's website to access ssh.
