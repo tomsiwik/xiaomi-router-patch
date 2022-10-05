@@ -3,6 +3,7 @@
 _Tested on:_
 
 - [Xiaomi Mi Wi-Fi Router 3G (R3G)](https://openwrt.org/toh/xiaomi/mir3g)
+- [Xiaomi Mi Wi-Fi Router 3 Pro (R3P)](https://openwrt.org/toh/xiaomi/mi_router_3_pro)
 - I'm sure this workaround can work on newer/others too
 
 I screwed up. I bought too many Xiaomi Routers: nano, mini and some other monster I don't remember.
