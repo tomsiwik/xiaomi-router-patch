@@ -1,4 +1,4 @@
-# Xiami Router Patch
+# Xiaomi Router Patch
 
 _Tested on:_
 
