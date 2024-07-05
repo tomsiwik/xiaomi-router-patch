@@ -3,6 +3,7 @@
 _Tested on:_
 
 - [Xiaomi Mi Wi-Fi Router 3G (R3G)](https://openwrt.org/toh/xiaomi/mir3g)
+- [Xiaomi Mi Wi-Fi Router 3 Pro (R3P)](https://openwrt.org/toh/xiaomi/mi_router_3_pro)
 - I'm sure this workaround can work on newer/others too
 
 I screwed up. I bought too many Xiaomi Routers: nano, mini and some other monster I don't remember.
@@ -73,3 +74,29 @@ reboot
 # and the openwrt banner will greet you
 ssh root@192.168.1.1
 ```
+
+## FAQ
+
+1. ERROR: No matching distribution found for tarfile
+
+    This error comes when exec `pip install tarfile` on Python 3.8.13. Just let it go. tarfile is built in python3
+
+2. Unable to negotiate with 192.168.31.1 port 22
+
+    I did not uncomment the key-file setup in `bootstrap/setup.sh`, run code successfully. try `ssh root@192.168.31.1` and got `Unable to negotiate with 192.168.31.1 port 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1`. STW and then edit `~/.ssh/config`, add those
+
+    ```
+    Host *
+    KexAlgorithms +diffie-hellman-group1-sha1
+    ```
+
+    then reconnect to xiaomi router, try ssh again but got `Unable to negotiate with 192.168.31.1 port 22: no matching host key type found. Their offer: ssh-rsa,ssh-dss`. STW and then edit `~/.ssh/config`
+
+    ```
+    Host *
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedKeyTypes +ssh-rsa
+    ```
+
+    now try ssh is fine and you will see Are U ok. details are [here](https://github.com/tomsiwik/xiaomi-router-patch/issues/1)
