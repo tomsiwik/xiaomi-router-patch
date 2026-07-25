@@ -1,0 +1,9 @@
+[project]
+name = "xiaomi-router-patch"
+version = "0.1.0"
+description = "Enable SSH on supported Xiaomi routers"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.32.5",
+]

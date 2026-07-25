@@ -19,8 +19,7 @@ the (paranoid) process and do it the friendly way so you guys can install your r
 
 ## Prerequisite
 
-- [x] Python / Python3
-- [x] Pip with packages: requests, tarfile
+- [x] [uv](https://docs.astral.sh/uv/getting-started/installation/)
 - [x] Installed Xiaomi firmwares that have this vuln:
   - [Dev firmware 2.25.122](https://dereferer.me/?https%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_c2175_2.25.122.bin)
   - [Dev firmware 2.25.124](https://dereferer.me/?https%3A//cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin)[[Mirror]](https://app.box.com/s/btnnyg9iifo0o4i4rc36bidi3d85bez5)
@@ -35,15 +34,12 @@ to `xiaomi4Life` as well as start/activate dropbear (SSH).
 Make sure your router is running and connected via ethernet.
 
 ```sh
-# Did you read the prerequisites? If not, uncomment the lines below 
-# and make sure you have python v3 installed
-# pip install requests
-# pip install tarfile
-
 # Make sure your router is connected (eth) & ready
 # This will activate ssh and set the root password to 'xiaomi4Life'
-python3 install.py
+uv run install.py
 ```
+
+`uv` installs a compatible Python version and the locked dependencies automatically.
 
 ## Enabling SSH & Key-Based Authentication (optional)
 
@@ -77,11 +73,7 @@ ssh root@192.168.1.1
 
 ## FAQ
 
-1. ERROR: No matching distribution found for tarfile
-
-    This error comes when exec `pip install tarfile` on Python 3.8.13. Just let it go. tarfile is built in python3
-
-2. Unable to negotiate with 192.168.31.1 port 22
+1. Unable to negotiate with 192.168.31.1 port 22
 
     I did not uncomment the key-file setup in `bootstrap/setup.sh`, run code successfully. try `ssh root@192.168.31.1` and got `Unable to negotiate with 192.168.31.1 port 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1`. STW and then edit `~/.ssh/config`, add those
 
